@@ -77,8 +77,7 @@ function getRadioVal(form, name) {
 }
 function listDoctors(){
     for(var i = 0; i < this.doctors; i++){
-        print(this.doctors[i].firstName);
-        print(" " + this.doctors[i].lastName);
+       document.write(doctors[i].firstname + " " + doctors[i].lastname);
     }
 }
 }
