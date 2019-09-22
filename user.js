@@ -29,6 +29,5 @@ this.setGender = function(gender) { this.gender = gender; }
 this.getGender = function() { return this.gender; } 
 this.setPassword = function(password) { this.password = password; } 
 this.getPassword = function() { return this.password; } 
-
    
 }
