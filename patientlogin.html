@@ -9,19 +9,13 @@
     <form>
       <fieldset>
         <legend>Enter your username and password</legend>
-        <p>
-          <label>Username</label>
-          <input type = "text"
-                 id = "username"
-                 value = " " 
-                 userInput=""/>
-        </p>
-        <p>
-          <label>Password</label>
-          <input type = "text"
-                 id = "password"
-                 value = " " />
-        </p>
+        <form action="/user.js">
+          Username:<br>
+          <input type="text" name="username"><br>
+          Password:<br>
+          <input type="text" name="password">
+          <input type="submit" value="Submit">
+        </form>
           <a href="https://gtam706.github.io/StreamlinedHealth/patientPage.html"><button style="color:blue;border-radius:10px;" type="button">Login</button></a>
       </fieldset>
     </form>
