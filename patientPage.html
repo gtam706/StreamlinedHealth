@@ -9,12 +9,11 @@
     <form>
       <fieldset>
         <legend>List out your Symtoms</legend>
-        <p>
-          <label>Symptoms</label>
-          <input type = "text"
-                 id = "symptoms"
-                 value = " " />
-        </p>
+        <form action="/user.js">
+          Symptoms:<br>
+        <input type="text" name="symptoms" value="Mickey"><br>
+        <input type="submit" value="Submit">
+        </form>
       </fieldset>
     </form>
     <button onclick=alert("See advice down below") style="color:blue;border-radius:10px;" type="button">Submit your response</button>
