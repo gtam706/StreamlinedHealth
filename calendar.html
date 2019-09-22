@@ -1,33 +1,31 @@
 <!doctype html>
 <html lang = "en">
   <head>
-    <title>doctor-locator.html</title>
+    <title>calendar.html</title>
     <meta charset = "UTF-8" />
   </head>
   <body>
+    <p><h1>Timings Open</h1><br></p>
+    <p>Select your appointment time</p>
+    <h3>Monday:</h3>
+      <input type="radio" name="time" value="eleven" checked="checked"> 11:00 AM<br>
+      <input type="radio" name="time" value="one">1:00 PM<br>
+      <input type="radio" name="time" value="threefourtyfive"> 3:45 PM<br>
+    <h3>Tuesday:</h3>
+      <input type="radio" name="time" value="eleven"> 7:45 AM<br>
+      <input type="radio" name="time" value="one"> 12 PM<br>
+      <input type="radio" name="time" value="threefourtyfive"> 2 PM<br>
+    </p>
     <script>
-var x = document.getElementById("demo");
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude; 
-}
-</script>
-function showPosition(position) {
-  var latlon = position.coords.latitude + "," + position.coords.longitude;
-
-  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
-  "+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
-
-  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-}
+      var radios = document.getElementsByTagName('input');
+      for(i=0; i<radios.length; i++ ) {
+          radios[i].onclick = function(e) {
+            if(e.ctrlKey) {
+              this.checked = false;
+            }
+          }
+       }
+    </script>
     <a href="https://gtam706.github.io/StreamlinedHealth/"><button style="color:blue;border-radius:10px;" type="button">Go Back</button></a>
   </body>
 </html>
