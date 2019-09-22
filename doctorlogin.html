@@ -1,27 +1,23 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang = "en">
   <head>
     <title>doctorlogin.html</title>
     <meta charset = "UTF-8" />
   </head>
-  <body bgcolor="C5F2F4">
-    <h1>Enter Your Doctor Login Below</h1>
+  <body>
+    <h1>Login to your account</h1>
     <form>
-      <p>
-        <label>Username</label>
-        <input type="text"
-               id="user"
-               value=" "></input>
-      </p>
-      <p>
-        <label>Password</label>
-        <input type="text"
-               id="pass"
-               value=" "></input>
-      </p>
+      <fieldset>
+        <legend>Enter your username and password</legend>
+        <form action="/user.js">
+          Username:<br>
+          <input type="text" name="username"><br>
+          Password:<br>
+          <input type="text" name="password">
+          <input type="submit" value="Submit">
+        </form>
+      </fieldset>
+    </form>
+    <a href="https://gtam706.github.io/StreamlinedHealth/"><button style="color:blue;border-radius:10px;" type="button">Go Back</button></a>
   </body>
 </html>
-</section>
-    <a href="https://gtam706.github.io/StreamlinedHealth/"><button style="color:blue;border-radius:10px;" type="button">Login</button></a>
-    <a href="https://gtam706.github.io/StreamlinedHealth/patientlogin.html"><button style="color:blue;border-radius:10px;" type="button">Go Back</button></a>
-</section>
