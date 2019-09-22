@@ -1,5 +1,6 @@
 class main{
     this.users = [];
+    this.buttons=[];
     this.doctors = [new doctor("Bob","Babatunde","Booby37@yahoo.com","Male","01/15/1975","49020134", 3627, "Fire way", "Cupertino", "California", "United States", "Bobbyfire", "password"), new doctor("John","Baba","Bay37@gmail.com","Male","01/15/1985","49560134", 3337, "Salsa way", "Miami", "Florida", "United States", "johnthebeast", "123456780")new doctor("Miley","Smith","king@gmail.com","Female","09/12/1985","51020134", 1111, "SilverStallone street", "Hydebad", "Andhra", "India", "boredom", "spandom")new doctor("Adash","Thoppae","thomas@yahoo.com","Male","12/15/1980","19020134", 4444, "Sparticus Road", "Fresno", "California", "United States", "Godman", "LOLOLOLOl")new doctor("Tamurna","Koka","koka@yahoo.com","Female","5/15/1975","49888134", 8590, "Ares street", "Athens", "None", "Greece", "wsgfsr", "firegames")];
     this.current;
     this.currentName;
@@ -78,6 +79,7 @@ function getRadioVal(form, name) {
 function listDoctors(){
     for(var i = 0; i < this.doctors; i++){
        document.write(doctors[i].firstname + " " + doctors[i].lastname);
+       buttons[i]=document.createElement("BUTTON");
     }
 }
 }
