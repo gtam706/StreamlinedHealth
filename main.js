@@ -1,20 +1,20 @@
 class main{
-    var users = [];
-    var doctors = [];
-    var current;
-    var currentName;
-    var currentPassword;
-    function addUser(var u){
+    this.users = [];
+    this.doctors = [];
+    this.current;
+    this.currentName;
+    this.currentPassword;
+    this.function addUser(var u){
         user.push(u);
     }
     function adddoctor(var d){
         doctors.push(d);
     }
     function userLogin(var name, var password){
-        current = null;
+        this.current = null;
         for(var i = 0; i < users.length; i++){
             if(users[i].getPassword.equals(password) && user[i].getUserName.equals(name));{
-                current = i;
+                this.current = i;
                 return true;
             }
         }
@@ -24,10 +24,10 @@ class main{
         }
     }
     function doctorLogin(var name, var pass){
-        current = null;
+        this.current = null;
         for(var i = 0; i < users.length; i++){
             if(users[i].password.equals(pass) && user[i].userName.equals(name));{
-                current = i;
+                this.current = i;
                 return true;
             }
         }
@@ -38,10 +38,28 @@ class main{
     }
 function formdata() 
 {
+    var storage;
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 var choice = getRadioVal(document.getElementById("Radio"),document.getElementsByTagName('input'));
-var bool = doctorLogin(username, password);
+if(this.choice.equals("doctor")){
+    storage = this.doctorLogin(username,password);
+    if(storage){
+        window.location.replace();
+
+    }
+}
+    else if(this.choice.equals("patient")){
+    storage = this.userLogin(username,password);
+        if(storage){
+            window.location.replace();
+        }
+}
+    else{
+        alert
+        ("Pick account type");
+    }
+
 }   
 function getRadioVal(form, name) {
     var val;
@@ -56,5 +74,11 @@ function getRadioVal(form, name) {
         }
     }
     return val; // return value of checked radio or undefined if none checked
+}
+function listDoctotrs(){
+    for(var i = 0; i < this.doctors; i++){
+        print(this.doctors[i].firstName);
+        print(" " + this.doctors[i].lastName);
+    }
 }
 }
