@@ -45,14 +45,14 @@ var choice = getRadioVal(document.getElementById("Radio"),document.getElementsBy
 if(this.choice.equals("doctor")){
     storage = this.doctorLogin(username,password);
     if(storage){
-        window.location.replace("homepageDoctor.html");
+        window.location.href("homepageDoctor.html");
 
     }
 }
     else if(this.choice.equals("patient")){
     storage = this.userLogin(username,password);
         if(storage){
-            window.location.replace("homepage_Patient.html");
+            window.location.href("homepage_Patient.html");
         }
 }
     else{
