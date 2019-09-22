@@ -7,6 +7,15 @@
   </head>
   <body>
    <script>
+   var file = new main();
+   main.listdoctors();
+   var i;
+   for(i=0;i<doctors.length;i++){
+      print(doctors[i].first name + " "+doctors[i].lastname\n)
+      print(doctors[i].address\n)
+      print(doctors[i].additionalnotes\n)
+      <a href="https://gtam706.github.io/StreamlinedHealth/PatientPage"><button style="color:blue;border-radius:10px;" type="button">Chat</button></a>
+   }
    </script>
     <a href="https://gtam706.github.io/StreamlinedHealth/"><button style="color:blue;border-radius:10px;" type="button">Go Back</button></a>
   </body>
