@@ -6,22 +6,8 @@
   </head>
   <body>
     <h1>Login to your account</h1>
-    <form id="radio">
-       <p>What type of user are you?:</p>
-          <input type="radio" name="usertype" value="doctor" checked="checked">Doctor<br>
-          <input type="radio" name="usertype" value="patient">Patient<br></p>
-       <script>var radios = document.getElementsByTagName('input');
-            for(i=0; i<radios.length; i++ ) {
-                radios[i].onclick = function(e) {
-                    if(e.ctrlKey) {
-                        this.checked = false;
-                    }
-                }
-            }
-       </script>
-      <fieldset>
+    <form>
         <legend>Enter your username and password</legend>
-        <form action="/main.js">
           Username:<br>
           <input type="text" name="username"><br>
           Password:<br>
