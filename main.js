@@ -45,14 +45,14 @@ var choice = getRadioVal(document.getElementById("Radio"),document.getElementsBy
 if(this.choice.equals("doctor")){
     storage = this.doctorLogin(username,password);
     if(storage){
-        window.location.replace();
+        window.location.replace("homepageDoctor.html");
 
     }
 }
     else if(this.choice.equals("patient")){
     storage = this.userLogin(username,password);
         if(storage){
-            window.location.replace();
+            window.location.replace("homepage_Patient.html");
         }
 }
     else{
@@ -75,7 +75,7 @@ function getRadioVal(form, name) {
     }
     return val; // return value of checked radio or undefined if none checked
 }
-function listDoctotrs(){
+function listDoctors(){
     for(var i = 0; i < this.doctors; i++){
         print(this.doctors[i].firstName);
         print(" " + this.doctors[i].lastName);
